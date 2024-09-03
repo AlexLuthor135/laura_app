@@ -3,8 +3,10 @@ from setuptools import setup
 APP = ['laura_app.py']
 DATA_FILES = []
 OPTIONS = {
-    'argv_emulation': True,
-    'packages': ['markdown_pdf', 'PyQt5'],
+    'argv_emulation': False,
+    'packages': ['markdown_pdf', 'PyQt5', 'PIL'],
+    'includes': ['markdown_pdf'],
+    'excludes': ['Carbon'],
 }
 
 setup(
